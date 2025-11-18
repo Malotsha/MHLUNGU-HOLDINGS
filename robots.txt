@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://malotsha.github.io/MHLUNGU-HOLDINGS/sitemap.xml
