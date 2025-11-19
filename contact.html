@@ -50,7 +50,7 @@
         <p>© Mhlungu Holdings 2025 | BRITS, SOUTH AFRICA</p>
     </footer>
 
-    <!-- JavaScript Validation + Mailto Fallback -->
+  
     <script>
         document.getElementById("contactForm").addEventListener("submit", function(event) {
             event.preventDefault();
@@ -62,10 +62,10 @@
             const message = document.getElementById("MESSAGE").value.trim();
             const error = document.getElementById("error");
 
-            // Clear previous errors
+          
             error.textContent = "";
 
-            // Validation
+           
             if (!firstName || !surname || !email || !message) {
                 error.textContent = "Please fill in all fields.";
                 return;
@@ -77,7 +77,7 @@
                 return;
             }
 
-            // Construct mailto link
+           
             const fullName = `${firstName} ${surname}`;
             const mailtoLink = `mailto:info@mhlunguholdings.co.za?subject=Message from ${encodeURIComponent(fullName)}&body=${encodeURIComponent(message + "\n\nFrom: " + fullName + " (" + email + ")")}`;
 
@@ -87,4 +87,5 @@
     </script>
 
 </body>
+
 </html>
